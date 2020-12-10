@@ -1,10 +1,8 @@
 const {Given, When, Then} = require('cucumber');
 
 <% steps.forEach(function(step) { -%>
-<%= step.keyword %>('<%- step.expression %>', function (<%= step.parameters.join(', ') %>) {
-  return 'pending';
+<%= step.keyword %>('<%- step.expression %>', async t => {
+    await t
 });
-
 <% }); 
-
 -%>
