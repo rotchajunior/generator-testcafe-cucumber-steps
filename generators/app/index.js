@@ -28,7 +28,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'featurePath',
         message: 'Specify the path to the target .feature file (test.feature || path/to/test):',
-        default: null,
+        default: './tests/features',
         required: true,
         store: true
       },
@@ -36,7 +36,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'stepsPath',
         message: 'Specify the path to the step_definitions directory:',
-        default: './features/step_definitions',
+        default: './tests/steps',
         store: true
       },
       {
